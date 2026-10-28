@@ -85,8 +85,52 @@ def list_project_items(project_path: str):
         } 
         
 
+def extract_function_calls(line: str) -> list[str]:
+    
+    pattern = r"\b([A-Za-z_][A-Za-z0-9_]*)\s*\("
+    return re.findall(pattern, line)
 
 
+
+
+
+def find_function_definition(function_name: str, project_path: str) -> list[dict]:
+    project_result = list_project_items(project_path)
+
+    if not project_result["valid"]:
+        return []
+
+    project_root = Path(project_path)
+    definitions = []
+
+    pattern = re.compile(
+        rf"^\s*def\s+{re.escape(function_name)}\s*\("
+    )
+
+    for item in project_result.get("items", []):
+        if item["type"] != "file":
+            continue
+
+        file_path = project_root / item["path"]
+
+        if file_path.suffix != ".py":
+            continue
+
+        try:
+            with open(file_path, "r", encoding="utf-8") as file:
+                for line_number, line in enumerate(file, start=1):
+                    if pattern.search(line):
+                        definitions.append({
+                            "name": function_name,
+                            "path": item["path"],
+                            "line_number": line_number,
+                            "text": line.strip()
+                        })
+
+        except (OSError, UnicodeError):
+            continue
+
+    return definitions
 
 def search_project(problem:str   , project_path :str) ->dir:
     
@@ -97,11 +141,19 @@ def search_project(problem:str   , project_path :str) ->dir:
         return project_result
     
     # Extract words from the problem dynamically
+    stop_words = {"my", "api", "is", "returning"}
     
     search_terms = re.findall(
     r"/[A-Za-z_][A-Za-z0-9_/-]*|[A-Za-z_]+|\d+",
     problem
 )
+    
+    search_terms = [
+    term for term in search_terms
+    if term.lower() not in stop_words
+]
+    
+    
     
     project_root = Path(project_path)
     matches  = []
@@ -149,10 +201,20 @@ def search_project(problem:str   , project_path :str) ->dir:
     
 
 
-result = search_project(
-    problem="My /orders API is returning 500",
-    project_path=r"C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app"
+# result = search_project(
+#     problem="My /orders API is returning 500",
+#     project_path=r"C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app"
+# )
+
+# print(result)
+
+calls = extract_function_calls(
+    "return get_all_orders()"
 )
+print("Detected calls:", calls)
 
-print(result)
-
+definitions = find_function_definition(
+    calls[0],
+    r"C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app"
+)
+print("Found definitions:", definitions)

@@ -1,9 +1,11 @@
-from fastapi import FastAPI
+
+from fastapi import APIRouter
+from app.services.services import fetch_orders
+
+router = APIRouter()
 
 
-app = FastAPI()
-
-
-@app.route("/orders")
+@router.get("/orders")
 def get_orders():
-    return "Orders list"
+    """Handle requests to the orders API."""
+    return fetch_orders()
