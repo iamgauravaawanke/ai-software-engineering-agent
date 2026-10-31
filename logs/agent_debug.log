@@ -1,0 +1,734 @@
+2026-11-01 00:46:35,775 | INFO | search_project | ========== SEARCH PROJECT STARTED ==========
+2026-11-01 00:46:35,775 | INFO | search_project | Problem received: My /orders API is returning 500
+2026-11-01 00:46:35,775 | INFO | search_project | Project path received: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,776 | INFO | list_project_items | Starting project inspection
+2026-11-01 00:46:35,776 | DEBUG | list_project_items | Project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,776 | INFO | validate_project_path | Starting project path validation
+2026-11-01 00:46:35,776 | DEBUG | validate_project_path | Input project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,776 | DEBUG | validate_project_path | Converted path into Path object: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,777 | INFO | validate_project_path | Project path validation successful
+2026-11-01 00:46:35,777 | DEBUG | list_project_items | Path validation result: {'valid': True, 'error': None}
+2026-11-01 00:46:35,777 | DEBUG | list_project_items | Excluded directories: {'.venv', 'venv', '.git'}
+2026-11-01 00:46:35,777 | DEBUG | insepect_directiory | Inspecting directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,777 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:35,778 | DEBUG | insepect_directiory | Detected item type: file | Item: database.py
+2026-11-01 00:46:35,778 | DEBUG | insepect_directiory | Relative path: database.py
+2026-11-01 00:46:35,778 | DEBUG | insepect_directiory | Item details: {'name': 'database.py', 'path': 'database.py', 'type': 'file'}
+2026-11-01 00:46:35,778 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\main.py
+2026-11-01 00:46:35,779 | DEBUG | insepect_directiory | Detected item type: file | Item: main.py
+2026-11-01 00:46:35,779 | DEBUG | insepect_directiory | Relative path: main.py
+2026-11-01 00:46:35,779 | DEBUG | insepect_directiory | Item details: {'name': 'main.py', 'path': 'main.py', 'type': 'file'}
+2026-11-01 00:46:35,779 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,780 | DEBUG | insepect_directiory | Detected item type: file | Item: orders.py
+2026-11-01 00:46:35,780 | DEBUG | insepect_directiory | Relative path: orders.py
+2026-11-01 00:46:35,780 | DEBUG | insepect_directiory | Item details: {'name': 'orders.py', 'path': 'orders.py', 'type': 'file'}
+2026-11-01 00:46:35,780 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:35,781 | DEBUG | insepect_directiory | Detected item type: directory | Item: services
+2026-11-01 00:46:35,781 | DEBUG | insepect_directiory | Relative path: services
+2026-11-01 00:46:35,781 | DEBUG | insepect_directiory | Item details: {'name': 'services', 'path': 'services', 'type': 'directory'}
+2026-11-01 00:46:35,781 | DEBUG | insepect_directiory | Entering nested directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:35,781 | DEBUG | insepect_directiory | Inspecting directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:35,782 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:35,782 | DEBUG | insepect_directiory | Detected item type: file | Item: services.py
+2026-11-01 00:46:35,782 | DEBUG | insepect_directiory | Relative path: services\services.py
+2026-11-01 00:46:35,782 | DEBUG | insepect_directiory | Item details: {'name': 'services.py', 'path': 'services/services.py', 'type': 'file'}
+2026-11-01 00:46:35,782 | INFO | list_project_items | Project inspection completed
+2026-11-01 00:46:35,783 | INFO | list_project_items | Total project items discovered: 5
+2026-11-01 00:46:35,783 | DEBUG | search_project | Project inspection result received
+2026-11-01 00:46:35,783 | DEBUG | search_project | Stop words: {'is', 'returning', 'api', 'my'}
+2026-11-01 00:46:35,783 | DEBUG | search_project | Initially extracted search terms: ['My', '/orders', 'API', 'is', 'returning', '500']
+2026-11-01 00:46:35,783 | INFO | search_project | Final search terms: ['/orders', '500']
+2026-11-01 00:46:35,784 | INFO | search_project | Starting code search
+2026-11-01 00:46:35,784 | DEBUG | search_project | Searching file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:35,784 | DEBUG | search_project | Searching file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\main.py
+2026-11-01 00:46:35,784 | DEBUG | search_project | Searching file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,785 | INFO | search_project | Matching line found | File: orders.py | Line: 8 | Text: @router.get("/orders")
+2026-11-01 00:46:35,785 | DEBUG | search_project | Searching file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:35,785 | INFO | search_project | Initial code search completed
+2026-11-01 00:46:35,785 | INFO | search_project | Total matching lines: 1
+2026-11-01 00:46:35,786 | INFO | search_project | Starting related function discovery
+2026-11-01 00:46:35,786 | DEBUG | search_project | Processing matched file: orders.py
+2026-11-01 00:46:35,786 | INFO | extract_calls_from_file | Extracting function calls from file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,786 | DEBUG | extract_function_calls | Extracting function calls from line: 
+
+2026-11-01 00:46:35,786 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,786 | DEBUG | extract_function_calls | Extracting function calls from line: from fastapi import APIRouter
+
+2026-11-01 00:46:35,787 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,787 | DEBUG | extract_function_calls | Extracting function calls from line: from app.services.services import fetch_orders
+
+2026-11-01 00:46:35,787 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,787 | DEBUG | extract_function_calls | Extracting function calls from line: 
+
+2026-11-01 00:46:35,787 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,787 | DEBUG | extract_function_calls | Extracting function calls from line: router = APIRouter()
+
+2026-11-01 00:46:35,787 | DEBUG | extract_function_calls | Extracted function calls: ['APIRouter']
+2026-11-01 00:46:35,788 | DEBUG | extract_function_calls | Extracting function calls from line: 
+
+2026-11-01 00:46:35,788 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,788 | DEBUG | extract_function_calls | Extracting function calls from line: 
+
+2026-11-01 00:46:35,788 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,788 | DEBUG | extract_function_calls | Extracting function calls from line: @router.get("/orders")
+
+2026-11-01 00:46:35,788 | DEBUG | extract_function_calls | Extracted function calls: ['get']
+2026-11-01 00:46:35,788 | DEBUG | extract_function_calls | Extracting function calls from line: def get_orders():
+
+2026-11-01 00:46:35,789 | DEBUG | extract_function_calls | Extracted function calls: ['get_orders']
+2026-11-01 00:46:35,789 | DEBUG | extract_function_calls | Extracting function calls from line:     """Handle requests to the orders API."""
+
+2026-11-01 00:46:35,789 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,789 | DEBUG | extract_function_calls | Extracting function calls from line:     return fetch_orders()
+
+2026-11-01 00:46:35,789 | DEBUG | extract_function_calls | Extracted function calls: ['fetch_orders']
+2026-11-01 00:46:35,790 | DEBUG | extract_calls_from_file | Function calls extracted from file: ['APIRouter', 'get', 'get_orders', 'fetch_orders']
+2026-11-01 00:46:35,790 | DEBUG | search_project | Function calls in matched file: ['APIRouter', 'get', 'get_orders', 'fetch_orders']
+2026-11-01 00:46:35,790 | DEBUG | search_project | Checking function body: APIRouter
+2026-11-01 00:46:35,790 | INFO | extract_function_body | Extracting function body: APIRouter | File: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,791 | DEBUG | extract_function_body | Source code loaded from: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,791 | DEBUG | extract_function_body | AST parsing successful: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,791 | DEBUG | extract_function_body | Found function node: get_orders
+2026-11-01 00:46:35,791 | WARNING | extract_function_body | Function definition not found: APIRouter
+2026-11-01 00:46:35,791 | DEBUG | search_project | Checking function body: get
+2026-11-01 00:46:35,791 | INFO | extract_function_body | Extracting function body: get | File: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,792 | DEBUG | extract_function_body | Source code loaded from: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,792 | DEBUG | extract_function_body | AST parsing successful: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,792 | DEBUG | extract_function_body | Found function node: get_orders
+2026-11-01 00:46:35,792 | WARNING | extract_function_body | Function definition not found: get
+2026-11-01 00:46:35,792 | DEBUG | search_project | Checking function body: get_orders
+2026-11-01 00:46:35,792 | INFO | extract_function_body | Extracting function body: get_orders | File: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,793 | DEBUG | extract_function_body | Source code loaded from: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,793 | DEBUG | extract_function_body | AST parsing successful: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,793 | DEBUG | extract_function_body | Found function node: get_orders
+2026-11-01 00:46:35,793 | INFO | extract_function_body | Matching function found: get_orders
+2026-11-01 00:46:35,793 | DEBUG | extract_function_body | Function body line range: 9 to 11
+2026-11-01 00:46:35,793 | DEBUG | extract_function_body | Extracted function body: ['def get_orders():', '    """Handle requests to the orders API."""', '    return fetch_orders()']
+2026-11-01 00:46:35,793 | DEBUG | search_project | Function body found for: get_orders
+2026-11-01 00:46:35,793 | DEBUG | extract_function_calls | Extracting function calls from line: def get_orders():
+2026-11-01 00:46:35,794 | DEBUG | extract_function_calls | Extracted function calls: ['get_orders']
+2026-11-01 00:46:35,794 | DEBUG | search_project | Calls extracted from function body: ['get_orders']
+2026-11-01 00:46:35,794 | DEBUG | extract_function_calls | Extracting function calls from line:     """Handle requests to the orders API."""
+2026-11-01 00:46:35,794 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,794 | DEBUG | search_project | Calls extracted from function body: []
+2026-11-01 00:46:35,794 | DEBUG | extract_function_calls | Extracting function calls from line:     return fetch_orders()
+2026-11-01 00:46:35,794 | DEBUG | extract_function_calls | Extracted function calls: ['fetch_orders']
+2026-11-01 00:46:35,794 | DEBUG | search_project | Calls extracted from function body: ['fetch_orders']
+2026-11-01 00:46:35,794 | DEBUG | search_project | Checking function body: fetch_orders
+2026-11-01 00:46:35,795 | INFO | extract_function_body | Extracting function body: fetch_orders | File: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,795 | DEBUG | extract_function_body | Source code loaded from: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,795 | DEBUG | extract_function_body | AST parsing successful: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,795 | DEBUG | extract_function_body | Found function node: get_orders
+2026-11-01 00:46:35,796 | WARNING | extract_function_body | Function definition not found: fetch_orders
+2026-11-01 00:46:35,796 | INFO | search_project | Initial related functions: ['get_orders', 'fetch_orders']
+2026-11-01 00:46:35,796 | DEBUG | search_project | Visited functions set initialized
+2026-11-01 00:46:35,796 | DEBUG | search_project | Related function details list initialized
+2026-11-01 00:46:35,796 | INFO | search_project | Function tracing started
+2026-11-01 00:46:35,796 | DEBUG | search_project | Initial function queue: ['get_orders', 'fetch_orders']
+2026-11-01 00:46:35,796 | DEBUG | search_project | Maximum functions allowed: 50
+2026-11-01 00:46:35,796 | DEBUG | search_project | Current function queue: ['get_orders', 'fetch_orders']
+2026-11-01 00:46:35,796 | INFO | search_project | Processing function: get_orders
+2026-11-01 00:46:35,797 | DEBUG | search_project | Remaining queue size: 1
+2026-11-01 00:46:35,797 | DEBUG | search_project | Function added to visited set: get_orders
+2026-11-01 00:46:35,797 | INFO | find_function_definition | Searching function definition: get_orders
+2026-11-01 00:46:35,797 | DEBUG | find_function_definition | Project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,797 | INFO | list_project_items | Starting project inspection
+2026-11-01 00:46:35,797 | DEBUG | list_project_items | Project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,797 | INFO | validate_project_path | Starting project path validation
+2026-11-01 00:46:35,797 | DEBUG | validate_project_path | Input project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,797 | DEBUG | validate_project_path | Converted path into Path object: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,798 | INFO | validate_project_path | Project path validation successful
+2026-11-01 00:46:35,798 | DEBUG | list_project_items | Path validation result: {'valid': True, 'error': None}
+2026-11-01 00:46:35,798 | DEBUG | list_project_items | Excluded directories: {'.venv', 'venv', '.git'}
+2026-11-01 00:46:35,798 | DEBUG | insepect_directiory | Inspecting directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,799 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:35,799 | DEBUG | insepect_directiory | Detected item type: file | Item: database.py
+2026-11-01 00:46:35,799 | DEBUG | insepect_directiory | Relative path: database.py
+2026-11-01 00:46:35,800 | DEBUG | insepect_directiory | Item details: {'name': 'database.py', 'path': 'database.py', 'type': 'file'}
+2026-11-01 00:46:35,800 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\main.py
+2026-11-01 00:46:35,800 | DEBUG | insepect_directiory | Detected item type: file | Item: main.py
+2026-11-01 00:46:35,800 | DEBUG | insepect_directiory | Relative path: main.py
+2026-11-01 00:46:35,801 | DEBUG | insepect_directiory | Item details: {'name': 'main.py', 'path': 'main.py', 'type': 'file'}
+2026-11-01 00:46:35,801 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,801 | DEBUG | insepect_directiory | Detected item type: file | Item: orders.py
+2026-11-01 00:46:35,801 | DEBUG | insepect_directiory | Relative path: orders.py
+2026-11-01 00:46:35,802 | DEBUG | insepect_directiory | Item details: {'name': 'orders.py', 'path': 'orders.py', 'type': 'file'}
+2026-11-01 00:46:35,802 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:35,802 | DEBUG | insepect_directiory | Detected item type: directory | Item: services
+2026-11-01 00:46:35,803 | DEBUG | insepect_directiory | Relative path: services
+2026-11-01 00:46:35,803 | DEBUG | insepect_directiory | Item details: {'name': 'services', 'path': 'services', 'type': 'directory'}
+2026-11-01 00:46:35,803 | DEBUG | insepect_directiory | Entering nested directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:35,803 | DEBUG | insepect_directiory | Inspecting directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:35,804 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:35,804 | DEBUG | insepect_directiory | Detected item type: file | Item: services.py
+2026-11-01 00:46:35,804 | DEBUG | insepect_directiory | Relative path: services\services.py
+2026-11-01 00:46:35,804 | DEBUG | insepect_directiory | Item details: {'name': 'services.py', 'path': 'services/services.py', 'type': 'file'}
+2026-11-01 00:46:35,805 | INFO | list_project_items | Project inspection completed
+2026-11-01 00:46:35,805 | INFO | list_project_items | Total project items discovered: 5
+2026-11-01 00:46:35,805 | DEBUG | find_function_definition | Function definition search pattern: ^\s*def\s+get_orders\s*\(
+2026-11-01 00:46:35,805 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:35,806 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\main.py
+2026-11-01 00:46:35,806 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,807 | INFO | find_function_definition | Function definition found: get_orders | File: orders.py | Line: 9
+2026-11-01 00:46:35,807 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:35,807 | INFO | find_function_definition | Function definition search completed: get_orders | Total definitions: 1
+2026-11-01 00:46:35,807 | DEBUG | search_project | Definitions returned: [{'name': 'get_orders', 'path': 'orders.py', 'line_number': 9, 'text': 'def get_orders():'}]
+2026-11-01 00:46:35,807 | INFO | search_project | Processing definition: get_orders | File: orders.py | Line: 9
+2026-11-01 00:46:35,808 | INFO | extract_function_body | Extracting function body: get_orders | File: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,808 | DEBUG | extract_function_body | Source code loaded from: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,808 | DEBUG | extract_function_body | AST parsing successful: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,808 | DEBUG | extract_function_body | Found function node: get_orders
+2026-11-01 00:46:35,808 | INFO | extract_function_body | Matching function found: get_orders
+2026-11-01 00:46:35,809 | DEBUG | extract_function_body | Function body line range: 9 to 11
+2026-11-01 00:46:35,809 | DEBUG | extract_function_body | Extracted function body: ['def get_orders():', '    """Handle requests to the orders API."""', '    return fetch_orders()']
+2026-11-01 00:46:35,809 | DEBUG | search_project | Function body received: ['def get_orders():', '    """Handle requests to the orders API."""', '    return fetch_orders()']
+2026-11-01 00:46:35,809 | DEBUG | search_project | Analyzing function body line: def get_orders():
+2026-11-01 00:46:35,809 | DEBUG | search_project | Skipping function definition line
+2026-11-01 00:46:35,809 | DEBUG | search_project | Analyzing function body line:     """Handle requests to the orders API."""
+2026-11-01 00:46:35,809 | DEBUG | extract_function_calls | Extracting function calls from line:     """Handle requests to the orders API."""
+2026-11-01 00:46:35,810 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,810 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:35,810 | DEBUG | search_project | Analyzing function body line:     return fetch_orders()
+2026-11-01 00:46:35,810 | DEBUG | extract_function_calls | Extracting function calls from line:     return fetch_orders()
+2026-11-01 00:46:35,810 | DEBUG | extract_function_calls | Extracted function calls: ['fetch_orders']
+2026-11-01 00:46:35,810 | DEBUG | search_project | New function calls detected: ['fetch_orders']
+2026-11-01 00:46:35,810 | DEBUG | search_project | Added to function_calls: fetch_orders
+2026-11-01 00:46:35,810 | INFO | search_project | Function tracing completed for: get_orders
+2026-11-01 00:46:35,810 | DEBUG | search_project | Function calls discovered: ['fetch_orders']
+2026-11-01 00:46:35,810 | DEBUG | search_project | Function detail created: {'name': 'get_orders', 'path': 'orders.py', 'line_number': 9, 'body': ['def get_orders():', '    """Handle requests to the orders API."""', '    return fetch_orders()'], 'function_calls': ['fetch_orders']}
+2026-11-01 00:46:35,811 | INFO | search_project | Function detail added: get_orders
+2026-11-01 00:46:35,811 | DEBUG | search_project | Current function queue: ['fetch_orders']
+2026-11-01 00:46:35,811 | INFO | search_project | Processing function: fetch_orders
+2026-11-01 00:46:35,811 | DEBUG | search_project | Remaining queue size: 0
+2026-11-01 00:46:35,811 | DEBUG | search_project | Function added to visited set: fetch_orders
+2026-11-01 00:46:35,811 | INFO | find_function_definition | Searching function definition: fetch_orders
+2026-11-01 00:46:35,811 | DEBUG | find_function_definition | Project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,811 | INFO | list_project_items | Starting project inspection
+2026-11-01 00:46:35,811 | DEBUG | list_project_items | Project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,812 | INFO | validate_project_path | Starting project path validation
+2026-11-01 00:46:35,812 | DEBUG | validate_project_path | Input project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,812 | DEBUG | validate_project_path | Converted path into Path object: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,812 | INFO | validate_project_path | Project path validation successful
+2026-11-01 00:46:35,812 | DEBUG | list_project_items | Path validation result: {'valid': True, 'error': None}
+2026-11-01 00:46:35,812 | DEBUG | list_project_items | Excluded directories: {'.venv', 'venv', '.git'}
+2026-11-01 00:46:35,813 | DEBUG | insepect_directiory | Inspecting directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,813 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:35,813 | DEBUG | insepect_directiory | Detected item type: file | Item: database.py
+2026-11-01 00:46:35,813 | DEBUG | insepect_directiory | Relative path: database.py
+2026-11-01 00:46:35,814 | DEBUG | insepect_directiory | Item details: {'name': 'database.py', 'path': 'database.py', 'type': 'file'}
+2026-11-01 00:46:35,814 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\main.py
+2026-11-01 00:46:35,814 | DEBUG | insepect_directiory | Detected item type: file | Item: main.py
+2026-11-01 00:46:35,814 | DEBUG | insepect_directiory | Relative path: main.py
+2026-11-01 00:46:35,814 | DEBUG | insepect_directiory | Item details: {'name': 'main.py', 'path': 'main.py', 'type': 'file'}
+2026-11-01 00:46:35,815 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,815 | DEBUG | insepect_directiory | Detected item type: file | Item: orders.py
+2026-11-01 00:46:35,815 | DEBUG | insepect_directiory | Relative path: orders.py
+2026-11-01 00:46:35,815 | DEBUG | insepect_directiory | Item details: {'name': 'orders.py', 'path': 'orders.py', 'type': 'file'}
+2026-11-01 00:46:35,815 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:35,816 | DEBUG | insepect_directiory | Detected item type: directory | Item: services
+2026-11-01 00:46:35,816 | DEBUG | insepect_directiory | Relative path: services
+2026-11-01 00:46:35,816 | DEBUG | insepect_directiory | Item details: {'name': 'services', 'path': 'services', 'type': 'directory'}
+2026-11-01 00:46:35,816 | DEBUG | insepect_directiory | Entering nested directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:35,817 | DEBUG | insepect_directiory | Inspecting directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:35,817 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:35,817 | DEBUG | insepect_directiory | Detected item type: file | Item: services.py
+2026-11-01 00:46:35,817 | DEBUG | insepect_directiory | Relative path: services\services.py
+2026-11-01 00:46:35,817 | DEBUG | insepect_directiory | Item details: {'name': 'services.py', 'path': 'services/services.py', 'type': 'file'}
+2026-11-01 00:46:35,818 | INFO | list_project_items | Project inspection completed
+2026-11-01 00:46:35,818 | INFO | list_project_items | Total project items discovered: 5
+2026-11-01 00:46:35,818 | DEBUG | find_function_definition | Function definition search pattern: ^\s*def\s+fetch_orders\s*\(
+2026-11-01 00:46:35,818 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:35,819 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\main.py
+2026-11-01 00:46:35,819 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,819 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:35,819 | INFO | find_function_definition | Function definition found: fetch_orders | File: services/services.py | Line: 5
+2026-11-01 00:46:35,820 | INFO | find_function_definition | Function definition search completed: fetch_orders | Total definitions: 1
+2026-11-01 00:46:35,820 | DEBUG | search_project | Definitions returned: [{'name': 'fetch_orders', 'path': 'services/services.py', 'line_number': 5, 'text': 'def fetch_orders():'}]
+2026-11-01 00:46:35,820 | INFO | search_project | Processing definition: fetch_orders | File: services/services.py | Line: 5
+2026-11-01 00:46:35,820 | INFO | extract_function_body | Extracting function body: fetch_orders | File: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:35,820 | DEBUG | extract_function_body | Source code loaded from: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:35,820 | DEBUG | extract_function_body | AST parsing successful: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:35,821 | DEBUG | extract_function_body | Found function node: fetch_orders
+2026-11-01 00:46:35,821 | INFO | extract_function_body | Matching function found: fetch_orders
+2026-11-01 00:46:35,821 | DEBUG | extract_function_body | Function body line range: 5 to 7
+2026-11-01 00:46:35,821 | DEBUG | extract_function_body | Extracted function body: ['def fetch_orders():', '    """Fetch orders using the database layer."""', '    return get_all_orders()']
+2026-11-01 00:46:35,821 | DEBUG | search_project | Function body received: ['def fetch_orders():', '    """Fetch orders using the database layer."""', '    return get_all_orders()']
+2026-11-01 00:46:35,821 | DEBUG | search_project | Analyzing function body line: def fetch_orders():
+2026-11-01 00:46:35,821 | DEBUG | search_project | Skipping function definition line
+2026-11-01 00:46:35,822 | DEBUG | search_project | Analyzing function body line:     """Fetch orders using the database layer."""
+2026-11-01 00:46:35,822 | DEBUG | extract_function_calls | Extracting function calls from line:     """Fetch orders using the database layer."""
+2026-11-01 00:46:35,822 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,822 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:35,822 | DEBUG | search_project | Analyzing function body line:     return get_all_orders()
+2026-11-01 00:46:35,822 | DEBUG | extract_function_calls | Extracting function calls from line:     return get_all_orders()
+2026-11-01 00:46:35,822 | DEBUG | extract_function_calls | Extracted function calls: ['get_all_orders']
+2026-11-01 00:46:35,823 | DEBUG | search_project | New function calls detected: ['get_all_orders']
+2026-11-01 00:46:35,823 | DEBUG | search_project | Added to function_calls: get_all_orders
+2026-11-01 00:46:35,823 | DEBUG | search_project | Added to related_functions: get_all_orders
+2026-11-01 00:46:35,823 | INFO | search_project | New function added to queue: get_all_orders
+2026-11-01 00:46:35,823 | INFO | search_project | Function tracing completed for: fetch_orders
+2026-11-01 00:46:35,823 | DEBUG | search_project | Function calls discovered: ['get_all_orders']
+2026-11-01 00:46:35,823 | DEBUG | search_project | Function detail created: {'name': 'fetch_orders', 'path': 'services/services.py', 'line_number': 5, 'body': ['def fetch_orders():', '    """Fetch orders using the database layer."""', '    return get_all_orders()'], 'function_calls': ['get_all_orders']}
+2026-11-01 00:46:35,823 | INFO | search_project | Function detail added: fetch_orders
+2026-11-01 00:46:35,824 | DEBUG | search_project | Current function queue: ['get_all_orders']
+2026-11-01 00:46:35,824 | INFO | search_project | Processing function: get_all_orders
+2026-11-01 00:46:35,824 | DEBUG | search_project | Remaining queue size: 0
+2026-11-01 00:46:35,824 | DEBUG | search_project | Function added to visited set: get_all_orders
+2026-11-01 00:46:35,824 | INFO | find_function_definition | Searching function definition: get_all_orders
+2026-11-01 00:46:35,824 | DEBUG | find_function_definition | Project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,824 | INFO | list_project_items | Starting project inspection
+2026-11-01 00:46:35,824 | DEBUG | list_project_items | Project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,825 | INFO | validate_project_path | Starting project path validation
+2026-11-01 00:46:35,825 | DEBUG | validate_project_path | Input project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,825 | DEBUG | validate_project_path | Converted path into Path object: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,825 | INFO | validate_project_path | Project path validation successful
+2026-11-01 00:46:35,825 | DEBUG | list_project_items | Path validation result: {'valid': True, 'error': None}
+2026-11-01 00:46:35,825 | DEBUG | list_project_items | Excluded directories: {'.venv', 'venv', '.git'}
+2026-11-01 00:46:35,826 | DEBUG | insepect_directiory | Inspecting directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:35,826 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:35,826 | DEBUG | insepect_directiory | Detected item type: file | Item: database.py
+2026-11-01 00:46:35,826 | DEBUG | insepect_directiory | Relative path: database.py
+2026-11-01 00:46:35,826 | DEBUG | insepect_directiory | Item details: {'name': 'database.py', 'path': 'database.py', 'type': 'file'}
+2026-11-01 00:46:35,827 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\main.py
+2026-11-01 00:46:35,827 | DEBUG | insepect_directiory | Detected item type: file | Item: main.py
+2026-11-01 00:46:35,827 | DEBUG | insepect_directiory | Relative path: main.py
+2026-11-01 00:46:35,827 | DEBUG | insepect_directiory | Item details: {'name': 'main.py', 'path': 'main.py', 'type': 'file'}
+2026-11-01 00:46:35,828 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,828 | DEBUG | insepect_directiory | Detected item type: file | Item: orders.py
+2026-11-01 00:46:35,828 | DEBUG | insepect_directiory | Relative path: orders.py
+2026-11-01 00:46:35,828 | DEBUG | insepect_directiory | Item details: {'name': 'orders.py', 'path': 'orders.py', 'type': 'file'}
+2026-11-01 00:46:35,829 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:35,829 | DEBUG | insepect_directiory | Detected item type: directory | Item: services
+2026-11-01 00:46:35,829 | DEBUG | insepect_directiory | Relative path: services
+2026-11-01 00:46:35,829 | DEBUG | insepect_directiory | Item details: {'name': 'services', 'path': 'services', 'type': 'directory'}
+2026-11-01 00:46:35,830 | DEBUG | insepect_directiory | Entering nested directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:35,830 | DEBUG | insepect_directiory | Inspecting directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:35,830 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:35,830 | DEBUG | insepect_directiory | Detected item type: file | Item: services.py
+2026-11-01 00:46:35,830 | DEBUG | insepect_directiory | Relative path: services\services.py
+2026-11-01 00:46:35,831 | DEBUG | insepect_directiory | Item details: {'name': 'services.py', 'path': 'services/services.py', 'type': 'file'}
+2026-11-01 00:46:35,831 | INFO | list_project_items | Project inspection completed
+2026-11-01 00:46:35,831 | INFO | list_project_items | Total project items discovered: 5
+2026-11-01 00:46:35,831 | DEBUG | find_function_definition | Function definition search pattern: ^\s*def\s+get_all_orders\s*\(
+2026-11-01 00:46:35,831 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:35,832 | INFO | find_function_definition | Function definition found: get_all_orders | File: database.py | Line: 2
+2026-11-01 00:46:35,832 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\main.py
+2026-11-01 00:46:35,832 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:35,832 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:35,833 | INFO | find_function_definition | Function definition search completed: get_all_orders | Total definitions: 1
+2026-11-01 00:46:35,833 | DEBUG | search_project | Definitions returned: [{'name': 'get_all_orders', 'path': 'database.py', 'line_number': 2, 'text': 'def get_all_orders():'}]
+2026-11-01 00:46:35,833 | INFO | search_project | Processing definition: get_all_orders | File: database.py | Line: 2
+2026-11-01 00:46:35,833 | INFO | extract_function_body | Extracting function body: get_all_orders | File: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:35,834 | DEBUG | extract_function_body | Source code loaded from: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:35,834 | DEBUG | extract_function_body | AST parsing successful: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:35,834 | DEBUG | extract_function_body | Found function node: get_all_orders
+2026-11-01 00:46:35,834 | INFO | extract_function_body | Matching function found: get_all_orders
+2026-11-01 00:46:35,835 | DEBUG | extract_function_body | Function body line range: 2 to 9
+2026-11-01 00:46:35,835 | DEBUG | extract_function_body | Extracted function body: ['def get_all_orders():', '    """Retrieve all orders from the database."""', '    orders = [', '        {"id": 1, "item": "Laptop"},', '        {"id": 2, "item": "Keyboard"}', '    ]', '', '    return orders']
+2026-11-01 00:46:35,835 | DEBUG | search_project | Function body received: ['def get_all_orders():', '    """Retrieve all orders from the database."""', '    orders = [', '        {"id": 1, "item": "Laptop"},', '        {"id": 2, "item": "Keyboard"}', '    ]', '', '    return orders']
+2026-11-01 00:46:35,835 | DEBUG | search_project | Analyzing function body line: def get_all_orders():
+2026-11-01 00:46:35,835 | DEBUG | search_project | Skipping function definition line
+2026-11-01 00:46:35,835 | DEBUG | search_project | Analyzing function body line:     """Retrieve all orders from the database."""
+2026-11-01 00:46:35,835 | DEBUG | extract_function_calls | Extracting function calls from line:     """Retrieve all orders from the database."""
+2026-11-01 00:46:35,836 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,836 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:35,836 | DEBUG | search_project | Analyzing function body line:     orders = [
+2026-11-01 00:46:35,836 | DEBUG | extract_function_calls | Extracting function calls from line:     orders = [
+2026-11-01 00:46:35,836 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,836 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:35,836 | DEBUG | search_project | Analyzing function body line:         {"id": 1, "item": "Laptop"},
+2026-11-01 00:46:35,836 | DEBUG | extract_function_calls | Extracting function calls from line:         {"id": 1, "item": "Laptop"},
+2026-11-01 00:46:35,836 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,837 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:35,837 | DEBUG | search_project | Analyzing function body line:         {"id": 2, "item": "Keyboard"}
+2026-11-01 00:46:35,837 | DEBUG | extract_function_calls | Extracting function calls from line:         {"id": 2, "item": "Keyboard"}
+2026-11-01 00:46:35,837 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,837 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:35,837 | DEBUG | search_project | Analyzing function body line:     ]
+2026-11-01 00:46:35,837 | DEBUG | extract_function_calls | Extracting function calls from line:     ]
+2026-11-01 00:46:35,837 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,838 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:35,838 | DEBUG | search_project | Analyzing function body line: 
+2026-11-01 00:46:35,838 | DEBUG | extract_function_calls | Extracting function calls from line: 
+2026-11-01 00:46:35,838 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,838 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:35,838 | DEBUG | search_project | Analyzing function body line:     return orders
+2026-11-01 00:46:35,838 | DEBUG | extract_function_calls | Extracting function calls from line:     return orders
+2026-11-01 00:46:35,839 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:35,839 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:35,839 | INFO | search_project | Function tracing completed for: get_all_orders
+2026-11-01 00:46:35,839 | DEBUG | search_project | Function calls discovered: []
+2026-11-01 00:46:35,839 | DEBUG | search_project | Function detail created: {'name': 'get_all_orders', 'path': 'database.py', 'line_number': 2, 'body': ['def get_all_orders():', '    """Retrieve all orders from the database."""', '    orders = [', '        {"id": 1, "item": "Laptop"},', '        {"id": 2, "item": "Keyboard"}', '    ]', '', '    return orders'], 'function_calls': []}
+2026-11-01 00:46:35,839 | INFO | search_project | Function detail added: get_all_orders
+2026-11-01 00:46:35,839 | INFO | search_project | Function tracing loop completed
+2026-11-01 00:46:35,839 | INFO | search_project | Total visited functions: 3
+2026-11-01 00:46:35,839 | INFO | search_project | Total related functions: 3
+2026-11-01 00:46:35,839 | INFO | search_project | Total function details: 3
+2026-11-01 00:46:35,840 | INFO | search_project | ========== SEARCH PROJECT COMPLETED ==========
+2026-11-01 00:46:57,657 | INFO | search_project | ========== SEARCH PROJECT STARTED ==========
+2026-11-01 00:46:57,657 | INFO | search_project | Problem received: My /orders API is returning 500
+2026-11-01 00:46:57,658 | INFO | search_project | Project path received: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,658 | INFO | list_project_items | Starting project inspection
+2026-11-01 00:46:57,658 | DEBUG | list_project_items | Project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,658 | INFO | validate_project_path | Starting project path validation
+2026-11-01 00:46:57,658 | DEBUG | validate_project_path | Input project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,658 | DEBUG | validate_project_path | Converted path into Path object: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,659 | INFO | validate_project_path | Project path validation successful
+2026-11-01 00:46:57,659 | DEBUG | list_project_items | Path validation result: {'valid': True, 'error': None}
+2026-11-01 00:46:57,659 | DEBUG | list_project_items | Excluded directories: {'.venv', 'venv', '.git'}
+2026-11-01 00:46:57,659 | DEBUG | insepect_directiory | Inspecting directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,659 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:57,660 | DEBUG | insepect_directiory | Detected item type: file | Item: database.py
+2026-11-01 00:46:57,660 | DEBUG | insepect_directiory | Relative path: database.py
+2026-11-01 00:46:57,660 | DEBUG | insepect_directiory | Item details: {'name': 'database.py', 'path': 'database.py', 'type': 'file'}
+2026-11-01 00:46:57,660 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\main.py
+2026-11-01 00:46:57,660 | DEBUG | insepect_directiory | Detected item type: file | Item: main.py
+2026-11-01 00:46:57,661 | DEBUG | insepect_directiory | Relative path: main.py
+2026-11-01 00:46:57,661 | DEBUG | insepect_directiory | Item details: {'name': 'main.py', 'path': 'main.py', 'type': 'file'}
+2026-11-01 00:46:57,661 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,661 | DEBUG | insepect_directiory | Detected item type: file | Item: orders.py
+2026-11-01 00:46:57,661 | DEBUG | insepect_directiory | Relative path: orders.py
+2026-11-01 00:46:57,661 | DEBUG | insepect_directiory | Item details: {'name': 'orders.py', 'path': 'orders.py', 'type': 'file'}
+2026-11-01 00:46:57,662 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:57,662 | DEBUG | insepect_directiory | Detected item type: directory | Item: services
+2026-11-01 00:46:57,662 | DEBUG | insepect_directiory | Relative path: services
+2026-11-01 00:46:57,662 | DEBUG | insepect_directiory | Item details: {'name': 'services', 'path': 'services', 'type': 'directory'}
+2026-11-01 00:46:57,663 | DEBUG | insepect_directiory | Entering nested directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:57,663 | DEBUG | insepect_directiory | Inspecting directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:57,663 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:57,663 | DEBUG | insepect_directiory | Detected item type: file | Item: services.py
+2026-11-01 00:46:57,664 | DEBUG | insepect_directiory | Relative path: services\services.py
+2026-11-01 00:46:57,664 | DEBUG | insepect_directiory | Item details: {'name': 'services.py', 'path': 'services/services.py', 'type': 'file'}
+2026-11-01 00:46:57,664 | INFO | list_project_items | Project inspection completed
+2026-11-01 00:46:57,664 | INFO | list_project_items | Total project items discovered: 5
+2026-11-01 00:46:57,664 | DEBUG | search_project | Project inspection result received
+2026-11-01 00:46:57,664 | DEBUG | search_project | Stop words: {'is', 'returning', 'my', 'api'}
+2026-11-01 00:46:57,665 | DEBUG | search_project | Initially extracted search terms: ['My', '/orders', 'API', 'is', 'returning', '500']
+2026-11-01 00:46:57,665 | INFO | search_project | Final search terms: ['/orders', '500']
+2026-11-01 00:46:57,665 | INFO | search_project | Starting code search
+2026-11-01 00:46:57,665 | DEBUG | search_project | Searching file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:57,665 | DEBUG | search_project | Searching file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\main.py
+2026-11-01 00:46:57,666 | DEBUG | search_project | Searching file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,666 | INFO | search_project | Matching line found | File: orders.py | Line: 8 | Text: @router.get("/orders")
+2026-11-01 00:46:57,666 | DEBUG | search_project | Searching file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:57,666 | INFO | search_project | Initial code search completed
+2026-11-01 00:46:57,667 | INFO | search_project | Total matching lines: 1
+2026-11-01 00:46:57,667 | INFO | search_project | Starting related function discovery
+2026-11-01 00:46:57,667 | DEBUG | search_project | Processing matched file: orders.py
+2026-11-01 00:46:57,667 | INFO | extract_calls_from_file | Extracting function calls from file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,667 | DEBUG | extract_function_calls | Extracting function calls from line: 
+
+2026-11-01 00:46:57,668 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,668 | DEBUG | extract_function_calls | Extracting function calls from line: from fastapi import APIRouter
+
+2026-11-01 00:46:57,668 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,668 | DEBUG | extract_function_calls | Extracting function calls from line: from app.services.services import fetch_orders
+
+2026-11-01 00:46:57,668 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,668 | DEBUG | extract_function_calls | Extracting function calls from line: 
+
+2026-11-01 00:46:57,668 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,668 | DEBUG | extract_function_calls | Extracting function calls from line: router = APIRouter()
+
+2026-11-01 00:46:57,669 | DEBUG | extract_function_calls | Extracted function calls: ['APIRouter']
+2026-11-01 00:46:57,669 | DEBUG | extract_function_calls | Extracting function calls from line: 
+
+2026-11-01 00:46:57,669 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,669 | DEBUG | extract_function_calls | Extracting function calls from line: 
+
+2026-11-01 00:46:57,669 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,669 | DEBUG | extract_function_calls | Extracting function calls from line: @router.get("/orders")
+
+2026-11-01 00:46:57,669 | DEBUG | extract_function_calls | Extracted function calls: ['get']
+2026-11-01 00:46:57,669 | DEBUG | extract_function_calls | Extracting function calls from line: def get_orders():
+
+2026-11-01 00:46:57,670 | DEBUG | extract_function_calls | Extracted function calls: ['get_orders']
+2026-11-01 00:46:57,670 | DEBUG | extract_function_calls | Extracting function calls from line:     """Handle requests to the orders API."""
+
+2026-11-01 00:46:57,670 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,670 | DEBUG | extract_function_calls | Extracting function calls from line:     return fetch_orders()
+
+2026-11-01 00:46:57,670 | DEBUG | extract_function_calls | Extracted function calls: ['fetch_orders']
+2026-11-01 00:46:57,670 | DEBUG | extract_calls_from_file | Function calls extracted from file: ['APIRouter', 'get', 'get_orders', 'fetch_orders']
+2026-11-01 00:46:57,670 | DEBUG | search_project | Function calls in matched file: ['APIRouter', 'get', 'get_orders', 'fetch_orders']
+2026-11-01 00:46:57,670 | DEBUG | search_project | Checking function body: APIRouter
+2026-11-01 00:46:57,670 | INFO | extract_function_body | Extracting function body: APIRouter | File: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,671 | DEBUG | extract_function_body | Source code loaded from: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,671 | DEBUG | extract_function_body | AST parsing successful: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,671 | DEBUG | extract_function_body | Found function node: get_orders
+2026-11-01 00:46:57,671 | WARNING | extract_function_body | Function definition not found: APIRouter
+2026-11-01 00:46:57,672 | DEBUG | search_project | Checking function body: get
+2026-11-01 00:46:57,672 | INFO | extract_function_body | Extracting function body: get | File: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,672 | DEBUG | extract_function_body | Source code loaded from: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,672 | DEBUG | extract_function_body | AST parsing successful: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,672 | DEBUG | extract_function_body | Found function node: get_orders
+2026-11-01 00:46:57,672 | WARNING | extract_function_body | Function definition not found: get
+2026-11-01 00:46:57,673 | DEBUG | search_project | Checking function body: get_orders
+2026-11-01 00:46:57,673 | INFO | extract_function_body | Extracting function body: get_orders | File: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,673 | DEBUG | extract_function_body | Source code loaded from: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,673 | DEBUG | extract_function_body | AST parsing successful: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,673 | DEBUG | extract_function_body | Found function node: get_orders
+2026-11-01 00:46:57,673 | INFO | extract_function_body | Matching function found: get_orders
+2026-11-01 00:46:57,673 | DEBUG | extract_function_body | Function body line range: 9 to 11
+2026-11-01 00:46:57,673 | DEBUG | extract_function_body | Extracted function body: ['def get_orders():', '    """Handle requests to the orders API."""', '    return fetch_orders()']
+2026-11-01 00:46:57,674 | DEBUG | search_project | Function body found for: get_orders
+2026-11-01 00:46:57,674 | DEBUG | extract_function_calls | Extracting function calls from line: def get_orders():
+2026-11-01 00:46:57,674 | DEBUG | extract_function_calls | Extracted function calls: ['get_orders']
+2026-11-01 00:46:57,674 | DEBUG | search_project | Calls extracted from function body: ['get_orders']
+2026-11-01 00:46:57,674 | DEBUG | extract_function_calls | Extracting function calls from line:     """Handle requests to the orders API."""
+2026-11-01 00:46:57,674 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,674 | DEBUG | search_project | Calls extracted from function body: []
+2026-11-01 00:46:57,674 | DEBUG | extract_function_calls | Extracting function calls from line:     return fetch_orders()
+2026-11-01 00:46:57,674 | DEBUG | extract_function_calls | Extracted function calls: ['fetch_orders']
+2026-11-01 00:46:57,674 | DEBUG | search_project | Calls extracted from function body: ['fetch_orders']
+2026-11-01 00:46:57,674 | DEBUG | search_project | Checking function body: fetch_orders
+2026-11-01 00:46:57,675 | INFO | extract_function_body | Extracting function body: fetch_orders | File: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,675 | DEBUG | extract_function_body | Source code loaded from: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,675 | DEBUG | extract_function_body | AST parsing successful: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,675 | DEBUG | extract_function_body | Found function node: get_orders
+2026-11-01 00:46:57,675 | WARNING | extract_function_body | Function definition not found: fetch_orders
+2026-11-01 00:46:57,675 | INFO | search_project | Initial related functions: ['get_orders', 'fetch_orders']
+2026-11-01 00:46:57,676 | DEBUG | search_project | Visited functions set initialized
+2026-11-01 00:46:57,676 | DEBUG | search_project | Related function details list initialized
+2026-11-01 00:46:57,676 | INFO | search_project | Function tracing started
+2026-11-01 00:46:57,676 | DEBUG | search_project | Initial function queue: ['get_orders', 'fetch_orders']
+2026-11-01 00:46:57,676 | DEBUG | search_project | Maximum functions allowed: 50
+2026-11-01 00:46:57,676 | DEBUG | search_project | Current function queue: ['get_orders', 'fetch_orders']
+2026-11-01 00:46:57,676 | INFO | search_project | Processing function: get_orders
+2026-11-01 00:46:57,676 | DEBUG | search_project | Remaining queue size: 1
+2026-11-01 00:46:57,676 | DEBUG | search_project | Function added to visited set: get_orders
+2026-11-01 00:46:57,677 | INFO | find_function_definition | Searching function definition: get_orders
+2026-11-01 00:46:57,677 | DEBUG | find_function_definition | Project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,677 | INFO | list_project_items | Starting project inspection
+2026-11-01 00:46:57,677 | DEBUG | list_project_items | Project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,677 | INFO | validate_project_path | Starting project path validation
+2026-11-01 00:46:57,677 | DEBUG | validate_project_path | Input project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,677 | DEBUG | validate_project_path | Converted path into Path object: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,678 | INFO | validate_project_path | Project path validation successful
+2026-11-01 00:46:57,678 | DEBUG | list_project_items | Path validation result: {'valid': True, 'error': None}
+2026-11-01 00:46:57,678 | DEBUG | list_project_items | Excluded directories: {'.venv', 'venv', '.git'}
+2026-11-01 00:46:57,678 | DEBUG | insepect_directiory | Inspecting directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,679 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:57,679 | DEBUG | insepect_directiory | Detected item type: file | Item: database.py
+2026-11-01 00:46:57,679 | DEBUG | insepect_directiory | Relative path: database.py
+2026-11-01 00:46:57,679 | DEBUG | insepect_directiory | Item details: {'name': 'database.py', 'path': 'database.py', 'type': 'file'}
+2026-11-01 00:46:57,679 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\main.py
+2026-11-01 00:46:57,680 | DEBUG | insepect_directiory | Detected item type: file | Item: main.py
+2026-11-01 00:46:57,680 | DEBUG | insepect_directiory | Relative path: main.py
+2026-11-01 00:46:57,680 | DEBUG | insepect_directiory | Item details: {'name': 'main.py', 'path': 'main.py', 'type': 'file'}
+2026-11-01 00:46:57,680 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,680 | DEBUG | insepect_directiory | Detected item type: file | Item: orders.py
+2026-11-01 00:46:57,681 | DEBUG | insepect_directiory | Relative path: orders.py
+2026-11-01 00:46:57,681 | DEBUG | insepect_directiory | Item details: {'name': 'orders.py', 'path': 'orders.py', 'type': 'file'}
+2026-11-01 00:46:57,681 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:57,681 | DEBUG | insepect_directiory | Detected item type: directory | Item: services
+2026-11-01 00:46:57,681 | DEBUG | insepect_directiory | Relative path: services
+2026-11-01 00:46:57,682 | DEBUG | insepect_directiory | Item details: {'name': 'services', 'path': 'services', 'type': 'directory'}
+2026-11-01 00:46:57,682 | DEBUG | insepect_directiory | Entering nested directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:57,682 | DEBUG | insepect_directiory | Inspecting directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:57,682 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:57,683 | DEBUG | insepect_directiory | Detected item type: file | Item: services.py
+2026-11-01 00:46:57,683 | DEBUG | insepect_directiory | Relative path: services\services.py
+2026-11-01 00:46:57,683 | DEBUG | insepect_directiory | Item details: {'name': 'services.py', 'path': 'services/services.py', 'type': 'file'}
+2026-11-01 00:46:57,683 | INFO | list_project_items | Project inspection completed
+2026-11-01 00:46:57,683 | INFO | list_project_items | Total project items discovered: 5
+2026-11-01 00:46:57,683 | DEBUG | find_function_definition | Function definition search pattern: ^\s*def\s+get_orders\s*\(
+2026-11-01 00:46:57,683 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:57,684 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\main.py
+2026-11-01 00:46:57,684 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,684 | INFO | find_function_definition | Function definition found: get_orders | File: orders.py | Line: 9
+2026-11-01 00:46:57,684 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:57,685 | INFO | find_function_definition | Function definition search completed: get_orders | Total definitions: 1
+2026-11-01 00:46:57,685 | DEBUG | search_project | Definitions returned: [{'name': 'get_orders', 'path': 'orders.py', 'line_number': 9, 'text': 'def get_orders():'}]
+2026-11-01 00:46:57,685 | INFO | search_project | Processing definition: get_orders | File: orders.py | Line: 9
+2026-11-01 00:46:57,685 | INFO | extract_function_body | Extracting function body: get_orders | File: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,685 | DEBUG | extract_function_body | Source code loaded from: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,686 | DEBUG | extract_function_body | AST parsing successful: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,686 | DEBUG | extract_function_body | Found function node: get_orders
+2026-11-01 00:46:57,686 | INFO | extract_function_body | Matching function found: get_orders
+2026-11-01 00:46:57,686 | DEBUG | extract_function_body | Function body line range: 9 to 11
+2026-11-01 00:46:57,686 | DEBUG | extract_function_body | Extracted function body: ['def get_orders():', '    """Handle requests to the orders API."""', '    return fetch_orders()']
+2026-11-01 00:46:57,686 | DEBUG | search_project | Function body received: ['def get_orders():', '    """Handle requests to the orders API."""', '    return fetch_orders()']
+2026-11-01 00:46:57,686 | DEBUG | search_project | Analyzing function body line: def get_orders():
+2026-11-01 00:46:57,686 | DEBUG | search_project | Skipping function definition line
+2026-11-01 00:46:57,687 | DEBUG | search_project | Analyzing function body line:     """Handle requests to the orders API."""
+2026-11-01 00:46:57,687 | DEBUG | extract_function_calls | Extracting function calls from line:     """Handle requests to the orders API."""
+2026-11-01 00:46:57,687 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,687 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:57,687 | DEBUG | search_project | Analyzing function body line:     return fetch_orders()
+2026-11-01 00:46:57,687 | DEBUG | extract_function_calls | Extracting function calls from line:     return fetch_orders()
+2026-11-01 00:46:57,687 | DEBUG | extract_function_calls | Extracted function calls: ['fetch_orders']
+2026-11-01 00:46:57,687 | DEBUG | search_project | New function calls detected: ['fetch_orders']
+2026-11-01 00:46:57,687 | DEBUG | search_project | Added to function_calls: fetch_orders
+2026-11-01 00:46:57,688 | INFO | search_project | Function tracing completed for: get_orders
+2026-11-01 00:46:57,688 | DEBUG | search_project | Function calls discovered: ['fetch_orders']
+2026-11-01 00:46:57,688 | DEBUG | search_project | Function detail created: {'name': 'get_orders', 'path': 'orders.py', 'line_number': 9, 'body': ['def get_orders():', '    """Handle requests to the orders API."""', '    return fetch_orders()'], 'function_calls': ['fetch_orders']}
+2026-11-01 00:46:57,688 | INFO | search_project | Function detail added: get_orders
+2026-11-01 00:46:57,688 | DEBUG | search_project | Current function queue: ['fetch_orders']
+2026-11-01 00:46:57,688 | INFO | search_project | Processing function: fetch_orders
+2026-11-01 00:46:57,688 | DEBUG | search_project | Remaining queue size: 0
+2026-11-01 00:46:57,688 | DEBUG | search_project | Function added to visited set: fetch_orders
+2026-11-01 00:46:57,689 | INFO | find_function_definition | Searching function definition: fetch_orders
+2026-11-01 00:46:57,689 | DEBUG | find_function_definition | Project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,689 | INFO | list_project_items | Starting project inspection
+2026-11-01 00:46:57,689 | DEBUG | list_project_items | Project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,689 | INFO | validate_project_path | Starting project path validation
+2026-11-01 00:46:57,689 | DEBUG | validate_project_path | Input project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,689 | DEBUG | validate_project_path | Converted path into Path object: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,690 | INFO | validate_project_path | Project path validation successful
+2026-11-01 00:46:57,690 | DEBUG | list_project_items | Path validation result: {'valid': True, 'error': None}
+2026-11-01 00:46:57,690 | DEBUG | list_project_items | Excluded directories: {'.venv', 'venv', '.git'}
+2026-11-01 00:46:57,690 | DEBUG | insepect_directiory | Inspecting directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,690 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:57,691 | DEBUG | insepect_directiory | Detected item type: file | Item: database.py
+2026-11-01 00:46:57,691 | DEBUG | insepect_directiory | Relative path: database.py
+2026-11-01 00:46:57,691 | DEBUG | insepect_directiory | Item details: {'name': 'database.py', 'path': 'database.py', 'type': 'file'}
+2026-11-01 00:46:57,691 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\main.py
+2026-11-01 00:46:57,691 | DEBUG | insepect_directiory | Detected item type: file | Item: main.py
+2026-11-01 00:46:57,692 | DEBUG | insepect_directiory | Relative path: main.py
+2026-11-01 00:46:57,692 | DEBUG | insepect_directiory | Item details: {'name': 'main.py', 'path': 'main.py', 'type': 'file'}
+2026-11-01 00:46:57,692 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,692 | DEBUG | insepect_directiory | Detected item type: file | Item: orders.py
+2026-11-01 00:46:57,692 | DEBUG | insepect_directiory | Relative path: orders.py
+2026-11-01 00:46:57,693 | DEBUG | insepect_directiory | Item details: {'name': 'orders.py', 'path': 'orders.py', 'type': 'file'}
+2026-11-01 00:46:57,693 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:57,693 | DEBUG | insepect_directiory | Detected item type: directory | Item: services
+2026-11-01 00:46:57,693 | DEBUG | insepect_directiory | Relative path: services
+2026-11-01 00:46:57,693 | DEBUG | insepect_directiory | Item details: {'name': 'services', 'path': 'services', 'type': 'directory'}
+2026-11-01 00:46:57,694 | DEBUG | insepect_directiory | Entering nested directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:57,694 | DEBUG | insepect_directiory | Inspecting directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:57,694 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:57,694 | DEBUG | insepect_directiory | Detected item type: file | Item: services.py
+2026-11-01 00:46:57,694 | DEBUG | insepect_directiory | Relative path: services\services.py
+2026-11-01 00:46:57,694 | DEBUG | insepect_directiory | Item details: {'name': 'services.py', 'path': 'services/services.py', 'type': 'file'}
+2026-11-01 00:46:57,695 | INFO | list_project_items | Project inspection completed
+2026-11-01 00:46:57,695 | INFO | list_project_items | Total project items discovered: 5
+2026-11-01 00:46:57,695 | DEBUG | find_function_definition | Function definition search pattern: ^\s*def\s+fetch_orders\s*\(
+2026-11-01 00:46:57,695 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:57,695 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\main.py
+2026-11-01 00:46:57,696 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,696 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:57,696 | INFO | find_function_definition | Function definition found: fetch_orders | File: services/services.py | Line: 5
+2026-11-01 00:46:57,696 | INFO | find_function_definition | Function definition search completed: fetch_orders | Total definitions: 1
+2026-11-01 00:46:57,697 | DEBUG | search_project | Definitions returned: [{'name': 'fetch_orders', 'path': 'services/services.py', 'line_number': 5, 'text': 'def fetch_orders():'}]
+2026-11-01 00:46:57,697 | INFO | search_project | Processing definition: fetch_orders | File: services/services.py | Line: 5
+2026-11-01 00:46:57,697 | INFO | extract_function_body | Extracting function body: fetch_orders | File: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:57,697 | DEBUG | extract_function_body | Source code loaded from: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:57,697 | DEBUG | extract_function_body | AST parsing successful: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:57,697 | DEBUG | extract_function_body | Found function node: fetch_orders
+2026-11-01 00:46:57,698 | INFO | extract_function_body | Matching function found: fetch_orders
+2026-11-01 00:46:57,698 | DEBUG | extract_function_body | Function body line range: 5 to 7
+2026-11-01 00:46:57,698 | DEBUG | extract_function_body | Extracted function body: ['def fetch_orders():', '    """Fetch orders using the database layer."""', '    return get_all_orders()']
+2026-11-01 00:46:57,698 | DEBUG | search_project | Function body received: ['def fetch_orders():', '    """Fetch orders using the database layer."""', '    return get_all_orders()']
+2026-11-01 00:46:57,698 | DEBUG | search_project | Analyzing function body line: def fetch_orders():
+2026-11-01 00:46:57,698 | DEBUG | search_project | Skipping function definition line
+2026-11-01 00:46:57,698 | DEBUG | search_project | Analyzing function body line:     """Fetch orders using the database layer."""
+2026-11-01 00:46:57,698 | DEBUG | extract_function_calls | Extracting function calls from line:     """Fetch orders using the database layer."""
+2026-11-01 00:46:57,698 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,698 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:57,699 | DEBUG | search_project | Analyzing function body line:     return get_all_orders()
+2026-11-01 00:46:57,699 | DEBUG | extract_function_calls | Extracting function calls from line:     return get_all_orders()
+2026-11-01 00:46:57,699 | DEBUG | extract_function_calls | Extracted function calls: ['get_all_orders']
+2026-11-01 00:46:57,699 | DEBUG | search_project | New function calls detected: ['get_all_orders']
+2026-11-01 00:46:57,699 | DEBUG | search_project | Added to function_calls: get_all_orders
+2026-11-01 00:46:57,699 | DEBUG | search_project | Added to related_functions: get_all_orders
+2026-11-01 00:46:57,699 | INFO | search_project | New function added to queue: get_all_orders
+2026-11-01 00:46:57,699 | INFO | search_project | Function tracing completed for: fetch_orders
+2026-11-01 00:46:57,699 | DEBUG | search_project | Function calls discovered: ['get_all_orders']
+2026-11-01 00:46:57,699 | DEBUG | search_project | Function detail created: {'name': 'fetch_orders', 'path': 'services/services.py', 'line_number': 5, 'body': ['def fetch_orders():', '    """Fetch orders using the database layer."""', '    return get_all_orders()'], 'function_calls': ['get_all_orders']}
+2026-11-01 00:46:57,700 | INFO | search_project | Function detail added: fetch_orders
+2026-11-01 00:46:57,700 | DEBUG | search_project | Current function queue: ['get_all_orders']
+2026-11-01 00:46:57,700 | INFO | search_project | Processing function: get_all_orders
+2026-11-01 00:46:57,700 | DEBUG | search_project | Remaining queue size: 0
+2026-11-01 00:46:57,700 | DEBUG | search_project | Function added to visited set: get_all_orders
+2026-11-01 00:46:57,700 | INFO | find_function_definition | Searching function definition: get_all_orders
+2026-11-01 00:46:57,700 | DEBUG | find_function_definition | Project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,700 | INFO | list_project_items | Starting project inspection
+2026-11-01 00:46:57,700 | DEBUG | list_project_items | Project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,700 | INFO | validate_project_path | Starting project path validation
+2026-11-01 00:46:57,701 | DEBUG | validate_project_path | Input project path: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,701 | DEBUG | validate_project_path | Converted path into Path object: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,701 | INFO | validate_project_path | Project path validation successful
+2026-11-01 00:46:57,701 | DEBUG | list_project_items | Path validation result: {'valid': True, 'error': None}
+2026-11-01 00:46:57,701 | DEBUG | list_project_items | Excluded directories: {'.venv', 'venv', '.git'}
+2026-11-01 00:46:57,701 | DEBUG | insepect_directiory | Inspecting directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app
+2026-11-01 00:46:57,702 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:57,702 | DEBUG | insepect_directiory | Detected item type: file | Item: database.py
+2026-11-01 00:46:57,702 | DEBUG | insepect_directiory | Relative path: database.py
+2026-11-01 00:46:57,702 | DEBUG | insepect_directiory | Item details: {'name': 'database.py', 'path': 'database.py', 'type': 'file'}
+2026-11-01 00:46:57,702 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\main.py
+2026-11-01 00:46:57,703 | DEBUG | insepect_directiory | Detected item type: file | Item: main.py
+2026-11-01 00:46:57,703 | DEBUG | insepect_directiory | Relative path: main.py
+2026-11-01 00:46:57,703 | DEBUG | insepect_directiory | Item details: {'name': 'main.py', 'path': 'main.py', 'type': 'file'}
+2026-11-01 00:46:57,703 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,703 | DEBUG | insepect_directiory | Detected item type: file | Item: orders.py
+2026-11-01 00:46:57,704 | DEBUG | insepect_directiory | Relative path: orders.py
+2026-11-01 00:46:57,704 | DEBUG | insepect_directiory | Item details: {'name': 'orders.py', 'path': 'orders.py', 'type': 'file'}
+2026-11-01 00:46:57,704 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:57,704 | DEBUG | insepect_directiory | Detected item type: directory | Item: services
+2026-11-01 00:46:57,704 | DEBUG | insepect_directiory | Relative path: services
+2026-11-01 00:46:57,704 | DEBUG | insepect_directiory | Item details: {'name': 'services', 'path': 'services', 'type': 'directory'}
+2026-11-01 00:46:57,705 | DEBUG | insepect_directiory | Entering nested directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:57,705 | DEBUG | insepect_directiory | Inspecting directory: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services
+2026-11-01 00:46:57,705 | DEBUG | insepect_directiory | Found project item: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:57,705 | DEBUG | insepect_directiory | Detected item type: file | Item: services.py
+2026-11-01 00:46:57,706 | DEBUG | insepect_directiory | Relative path: services\services.py
+2026-11-01 00:46:57,706 | DEBUG | insepect_directiory | Item details: {'name': 'services.py', 'path': 'services/services.py', 'type': 'file'}
+2026-11-01 00:46:57,706 | INFO | list_project_items | Project inspection completed
+2026-11-01 00:46:57,706 | INFO | list_project_items | Total project items discovered: 5
+2026-11-01 00:46:57,706 | DEBUG | find_function_definition | Function definition search pattern: ^\s*def\s+get_all_orders\s*\(
+2026-11-01 00:46:57,706 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:57,707 | INFO | find_function_definition | Function definition found: get_all_orders | File: database.py | Line: 2
+2026-11-01 00:46:57,707 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\main.py
+2026-11-01 00:46:57,707 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\orders.py
+2026-11-01 00:46:57,707 | DEBUG | find_function_definition | Searching function in file: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\services\services.py
+2026-11-01 00:46:57,708 | INFO | find_function_definition | Function definition search completed: get_all_orders | Total definitions: 1
+2026-11-01 00:46:57,708 | DEBUG | search_project | Definitions returned: [{'name': 'get_all_orders', 'path': 'database.py', 'line_number': 2, 'text': 'def get_all_orders():'}]
+2026-11-01 00:46:57,708 | INFO | search_project | Processing definition: get_all_orders | File: database.py | Line: 2
+2026-11-01 00:46:57,708 | INFO | extract_function_body | Extracting function body: get_all_orders | File: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:57,708 | DEBUG | extract_function_body | Source code loaded from: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:57,709 | DEBUG | extract_function_body | AST parsing successful: C:\Users\gaura\OneDrive\Documents\ai-software-engineering-agent\sample_project\app\database.py
+2026-11-01 00:46:57,709 | DEBUG | extract_function_body | Found function node: get_all_orders
+2026-11-01 00:46:57,709 | INFO | extract_function_body | Matching function found: get_all_orders
+2026-11-01 00:46:57,709 | DEBUG | extract_function_body | Function body line range: 2 to 9
+2026-11-01 00:46:57,709 | DEBUG | extract_function_body | Extracted function body: ['def get_all_orders():', '    """Retrieve all orders from the database."""', '    orders = [', '        {"id": 1, "item": "Laptop"},', '        {"id": 2, "item": "Keyboard"}', '    ]', '', '    return orders']
+2026-11-01 00:46:57,709 | DEBUG | search_project | Function body received: ['def get_all_orders():', '    """Retrieve all orders from the database."""', '    orders = [', '        {"id": 1, "item": "Laptop"},', '        {"id": 2, "item": "Keyboard"}', '    ]', '', '    return orders']
+2026-11-01 00:46:57,710 | DEBUG | search_project | Analyzing function body line: def get_all_orders():
+2026-11-01 00:46:57,710 | DEBUG | search_project | Skipping function definition line
+2026-11-01 00:46:57,710 | DEBUG | search_project | Analyzing function body line:     """Retrieve all orders from the database."""
+2026-11-01 00:46:57,710 | DEBUG | extract_function_calls | Extracting function calls from line:     """Retrieve all orders from the database."""
+2026-11-01 00:46:57,710 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,710 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:57,710 | DEBUG | search_project | Analyzing function body line:     orders = [
+2026-11-01 00:46:57,710 | DEBUG | extract_function_calls | Extracting function calls from line:     orders = [
+2026-11-01 00:46:57,711 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,711 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:57,711 | DEBUG | search_project | Analyzing function body line:         {"id": 1, "item": "Laptop"},
+2026-11-01 00:46:57,711 | DEBUG | extract_function_calls | Extracting function calls from line:         {"id": 1, "item": "Laptop"},
+2026-11-01 00:46:57,711 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,711 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:57,711 | DEBUG | search_project | Analyzing function body line:         {"id": 2, "item": "Keyboard"}
+2026-11-01 00:46:57,711 | DEBUG | extract_function_calls | Extracting function calls from line:         {"id": 2, "item": "Keyboard"}
+2026-11-01 00:46:57,711 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,712 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:57,712 | DEBUG | search_project | Analyzing function body line:     ]
+2026-11-01 00:46:57,712 | DEBUG | extract_function_calls | Extracting function calls from line:     ]
+2026-11-01 00:46:57,712 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,712 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:57,712 | DEBUG | search_project | Analyzing function body line: 
+2026-11-01 00:46:57,712 | DEBUG | extract_function_calls | Extracting function calls from line: 
+2026-11-01 00:46:57,712 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,712 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:57,713 | DEBUG | search_project | Analyzing function body line:     return orders
+2026-11-01 00:46:57,713 | DEBUG | extract_function_calls | Extracting function calls from line:     return orders
+2026-11-01 00:46:57,713 | DEBUG | extract_function_calls | Extracted function calls: []
+2026-11-01 00:46:57,713 | DEBUG | search_project | New function calls detected: []
+2026-11-01 00:46:57,713 | INFO | search_project | Function tracing completed for: get_all_orders
+2026-11-01 00:46:57,713 | DEBUG | search_project | Function calls discovered: []
+2026-11-01 00:46:57,713 | DEBUG | search_project | Function detail created: {'name': 'get_all_orders', 'path': 'database.py', 'line_number': 2, 'body': ['def get_all_orders():', '    """Retrieve all orders from the database."""', '    orders = [', '        {"id": 1, "item": "Laptop"},', '        {"id": 2, "item": "Keyboard"}', '    ]', '', '    return orders'], 'function_calls': []}
+2026-11-01 00:46:57,713 | INFO | search_project | Function detail added: get_all_orders
+2026-11-01 00:46:57,713 | INFO | search_project | Function tracing loop completed
+2026-11-01 00:46:57,713 | INFO | search_project | Total visited functions: 3
+2026-11-01 00:46:57,714 | INFO | search_project | Total related functions: 3
+2026-11-01 00:46:57,714 | INFO | search_project | Total function details: 3
+2026-11-01 00:46:57,714 | INFO | search_project | ========== SEARCH PROJECT COMPLETED ==========
